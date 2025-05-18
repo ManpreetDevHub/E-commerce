@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viewport</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/css/viewport.css">
+
+<body>
+    <nav>
+        <div id="left">
+            <a href="/html/index.html">
+                <img src="/images/logo.png" alt="Logo" id="logo">
+            </a>
+        </div>
+        <div id="middle">
+            <input type="text" placeholder="Search for products, brands and more" id="search">
+            <button id="search-btn"><i class="ri-search-line"></i></button>
+        </div>
+        <div id="right" onclick="window.location.href='/html/aTC.html'">
+            <span><i class="ri-shopping-cart-2-fill cart"></i></span>
+            <span class="count">0</span>
+        </div>
+    </nav>
+
+    <main>
+        <div class="product-container">
+            <div class="product-images">
+                <img src="#" alt="" class="thumbnail first">
+                <img src="#" alt="" class="thumbnail second">
+                <img src="#" alt="" class="thumbnail third">
+            </div>
+            <div class="product-main">
+                <img src="#" alt="" class="main-image">
+            </div>
+            <div class="content">
+                <h2 class="heading"></h2>
+                <p class="price"></p>
+                <div class="size-container">
+                    <p>Size:</p>
+                    <div class="sizes">
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                        <span class="size">XL</span>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-button">Add to cart</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/js/viewport.js"></script>
+</html>
