@@ -1,0 +1,194 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding :0px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 100;
+}
+nav #left{
+    height: 100%;
+   display: flex;
+}nav #left a{
+    height: 100%;
+    object-fit: contain;
+    object-position: centerool;
+}
+nav #left a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position:  center center; 
+}
+
+
+nav #middle{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;  
+    margin: 10px;
+}
+nav #middle input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+nav #middle input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+nav #middle button{
+    padding: 10px;
+    background:transparent;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    margin: auto;
+    font-size: 20px;
+}
+nav #right{
+    display: flex;
+    font-size: larger;
+    position: relative;
+}nav #right .cart{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    object-position: center center;
+    font-size: 1.5em;
+}
+nav #right .cart:hover{
+    cursor: pointer;
+}
+
+nav #right .count{
+    width: 15px;
+    height: 15px;
+    background-color: #e71414;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    right: -5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main{
+    
+    margin-top: 100px;
+    /* background: #000; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-container {
+    display: flex;
+    gap: 20px;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.product-images{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-images img {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.product-main img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.content {
+    max-width: 400px;
+}
+
+.rating-container i {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rating-container i.selected {
+    color: #f39c12;
+}
+
+.size-container p, .color-container p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.size-container .size, .color-container .color {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.size.selected, .color.selected {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.add-to-cart {
+    margin-top: 15px;
+}
+
+.add-to-cart button {
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    box-shadow: none;
+}
+
+
